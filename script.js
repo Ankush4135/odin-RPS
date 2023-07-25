@@ -2,6 +2,13 @@ const element = ["rock", "paper", "scissor"];
 let playerWins = 0, computerWins = 0;
 let playerSelection, computerSelection;
 
+const rock = document.querySelector('#rock')
+
+rock.addEventListener(
+  'click', () => 
+    console.log("rock")
+)
+
 function getComputerChoice() {
   let select = Math.floor(Math.random() * 3);
   let selectedElement = element[select]
@@ -45,7 +52,7 @@ function playRound(playerSelection, computerSelection) {
 
 for (let i = 0; i < 5; i++) {
   console.log("P : " + playerWins + "  C : " + computerWins);
-  playerSelection = prompt("Enter your selection (Rock ,Paper or Scissor) :").toLowerCase();
+	//playerSelection = prompt("Enter your selection (Rock ,Paper or Scissor) :").toLowerCase();
   computerSelection = getComputerChoice();
   playRound(playerSelection, computerSelection);
 }

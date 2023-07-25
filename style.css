@@ -1,4 +1,75 @@
+/** {
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+}*/
+
 html {
   height: 100%;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  padding: 5% 10%;
+  background-color: #3d0b89;
+}
+
+#gameWindow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: stretch; */
+}
+
+#gameTitle,
+#gameVisual,
+#gameInfo,
+#playerOptions,
+#footer {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+#player,
+#score,
+#computer {
+  display: flex;
+  /*flex-direction: column;*/
+  flex: 1;
+  justify-content: center;
+}
+
+#playerSelection, #computerSelection{
+  margin: 50px;
+  transform: scale(5);
+}
+
+#rock,
+#paper,
+#scissor {
+  margin: 50px;
+  transform: scale(5);
+}
+
+#gameInfo {
+  justify-content: space-between;
+}
+
+#gameInfo>div {
+  /* flex: 1; */
+  justify-content: center;
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #370a7b;
+  text-align: center;
 }
