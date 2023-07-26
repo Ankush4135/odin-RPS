@@ -60,11 +60,11 @@
    justify-content: flex-start;
  }
 
- #score {
+ #score,
+ #result {
    text-align: center;
    font-size: 30px;
    flex: 0;
-   flex-basis: 50px;
    justify-content: center;
  }
 
@@ -79,6 +79,7 @@
  #scissor {
    margin: 50px;
    transform: scale(5);
+   cursor: pointer;
  }
 
  #gameInfo {
@@ -101,6 +102,7 @@
  }
 
  #gameDetails {
+   padding: 2%;
    border-style: solid;
    border-color: white;
    border-width: 1px;
