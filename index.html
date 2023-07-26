@@ -9,8 +9,10 @@
 </head>
 
 <body>
+  <div id="titleContainer">
+    <h1>Rock Paper Scissors</h1>
+  </div>
   <div id="gameWindow">
-    <h1 id="gameTitle">Rock Paper Scissors</h1>
     <div id="gameVisual">
       <div id="player">
         <p>YOU</p>
@@ -19,15 +21,15 @@
         </p>
       </div>
       <div id="score">
-        <p>score <Br>
-        0 - 0</p>
+        <p>score<Br>
+          <span id="playerScore">0</span> - <span id="computerScore">0</span>
+        </p>
       </div>
       <div id="computer">
         <p>AI</p>
         <p id="computerSelection">
           ✊
         </p>
-        
       </div>
     </div>
     <div id="gameInfo">
@@ -41,6 +43,7 @@
         <button id="restart">Restart</button>
       </div>
     </div>
+    <hr width="100%">
     <div id="playerOptions">
       <div id="rock">
         ✊
@@ -52,11 +55,16 @@
         ✌
       </div>
     </div>
-  </div>
-  <div id="footer">
+    <div id="gameDetails">
+      <h3>Info</h3>
+      <p>Tap/Click on the Element(Rock,Paper and Scirror) you want to choose.</p>
+    </div>
+    <P> </P> <!-- this tag is empty because for bottom margin -->
+
+    <div id="footer">
       ©
     </div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
