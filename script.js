@@ -19,6 +19,7 @@ gameElements.forEach(element => {
     playRound(element.id))
 })
 
+
 function getComputerChoice() {
   let select = Math.floor(Math.random() * 3);
   let selectedElement = elements[select];
@@ -92,11 +93,6 @@ function gameEnd() {
     else {
       result.textContent = "You Lose!!, Click Restart to play again"
     }
-
-    // gameElements.forEach(element => {
-    //   element.removeEventListener(
-    //     'click', temp)
-    // });
   }
 }
 
@@ -105,9 +101,8 @@ document.querySelector('#restart').onclick = () => {
   round.textContent = 0;
   playerWins = 0;
   computerWins = 0;
+  document.querySelector('#computerSelection').textContent = "❔";
+  document.querySelector('#playerSelection').textContent = "❔";
   updateScore();
   result.textContent = "Play!";
 }
-
-
-////////test/////////
