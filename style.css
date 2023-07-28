@@ -1,4 +1,114 @@
-html {
-  height: 100%;
-  width: 100%;
-}
+ /* * {
+   border-style: solid;
+   border-color: white;
+   border-width: 1px;
+ } */
+
+ html {
+   height: 100%;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   color: white;
+ }
+
+ body {
+   background-color: #3d0b89;
+   margin: 0;
+   padding: 0;
+ }
+
+ #gameWindow {
+   padding: 0% 10%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ }
+
+ #titleContainer {
+   padding: 1%;
+   background-color: #370a7b;
+   text-align: center;
+ }
+
+ #gameVisual,
+ #gameInfo,
+ #playerOptions {
+   display: flex;
+   justify-content: center;
+   flex: 1;
+   flex-wrap: wrap;
+ }
+
+ #playerOptions {
+   margin-bottom: 20px;
+ }
+
+ #gameVisual {
+   flex-wrap: nowrap;
+ }
+
+ #player,
+ #score,
+ #computer {
+   height: 180px;
+   width: 150px;
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+   align-items: center;
+   justify-content: flex-start;
+ }
+
+ #score,
+ #result {
+   text-align: center;
+   font-size: 30px;
+   flex: 0;
+   justify-content: center;
+ }
+
+ #playerSelection,
+ #computerSelection {
+   margin: 50px;
+   transform: scale(5);
+ }
+
+ #rock,
+ #paper,
+ #scissor {
+   margin: 50px;
+   transform: scale(5);
+   cursor: pointer;
+ }
+
+ #gameInfo {
+   justify-content: space-between;
+   margin: 2% 7%;
+ }
+
+ #gameInfo>div {
+   justify-content: center;
+ }
+
+ #footer {
+   padding: 1%;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #370a7b;
+   text-align: center;
+ }
+
+ #gameDetails {
+   padding: 2%;
+   border-style: solid;
+   border-color: white;
+   border-width: 1px;
+   border-radius: 5px;
+ }
+
+ #gameDetails>h3 {
+   text-align: center;
+ }
